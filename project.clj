@@ -4,7 +4,9 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [compojure "1.5.2"]
                  [hiccup "1.0.5"]
-                 [ring-server "0.4.0"]]
+                 [ring-server "0.4.0"]
+                 [liberator "0.10.0"]
+                 [cheshire "5.2.0"]]
   :plugins [[lein-ring "0.8.12"]]
   :ring {:handler liberator-service.handler/app
          :init liberator-service.handler/init
